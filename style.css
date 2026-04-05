@@ -1,0 +1,122 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    background: #1a1a2e;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #4ecca3;
+}
+
+/* SECTIONS */
+section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HERO */
+#about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* SKILLS GRID */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.skills-grid div {
+    background: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* PROJECTS GRID */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+projects-grid article {
+    background: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    background: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #about h1 {
+        font-size: 2rem;
+    }
+}
